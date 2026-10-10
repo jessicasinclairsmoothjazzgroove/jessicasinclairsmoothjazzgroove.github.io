@@ -1,6 +1,147 @@
 <!DOCTYPE html>
 <html lang="en">
-`<head>
+<head>
+<style>
+/* Tour Section Styling */
+.section-title {
+  font-family: 'Montserrat', 'Helvetica Neue', sans-serif;
+  font-size: 2.2rem;
+  letter-spacing: 2px;
+  text-transform: uppercase;
+  color: #ffffff;
+  margin-bottom: 8px;
+  text-align: left;
+}
+
+.tour-schedule-note {
+  font-family: 'Inter', sans-serif;
+  font-size: 0.95rem;
+  color: #b3b3b3;
+  margin-bottom: 35px;
+  font-style: italic;
+  display: flex;
+  align-items: center;
+  gap: 8px;
+}
+
+/* Table Base Layout */
+.tour-table {
+  width: 100%;
+  border-collapse: collapse;
+  margin-top: 20px;
+  background: #121212; /* Dark smooth jazz background */
+}
+
+.tour-row {
+  border-bottom: 1px solid #262626; /* Clean divider line */
+  transition: background-color 0.3s ease;
+}
+
+.tour-row:hover {
+  background-color: #1a1a1a; /* Subtle premium highlight on hover */
+}
+
+.tour-cell {
+  padding: 24px 16px;
+  vertical-align: middle;
+}
+
+/* Cell Column Specifics */
+.date-cell {
+  font-family: 'Montserrat', sans-serif;
+  font-size: 1.1rem;
+  font-weight: 700;
+  color: #ffc107; /* Eye-catching premium gold accent */
+  width: 25%;
+}
+
+.venue-cell {
+  width: 55%;
+}
+
+.venue-name {
+  font-family: 'Inter', sans-serif;
+  font-size: 1.2rem;
+  font-weight: 600;
+  color: #ffffff;
+  margin-bottom: 4px;
+}
+
+.location-name {
+  font-family: 'Inter', sans-serif;
+  font-size: 0.95rem;
+  color: #888888;
+  text-transform: uppercase;
+  letter-spacing: 1px;
+}
+
+.action-cell {
+  width: 20%;
+  text-align: right;
+}
+
+/* Call to Action Button */
+.ticket-btn {
+  display: inline-block;
+  font-family: 'Montserrat', sans-serif;
+  font-size: 0.85rem;
+  font-weight: 700;
+  text-transform: uppercase;
+  letter-spacing: 1px;
+  color: #ffc107;
+  border: 1px solid #ffc107;
+  padding: 10px 22px;
+  text-decoration: none;
+  border-radius: 4px;
+  transition: all 0.3s ease;
+}
+
+.ticket-btn:hover {
+  background-color: #ffc107;
+  color: #121212;
+  box-shadow: 0 0 15px rgba(255, 193, 7, 0.4);
+}
+
+/* 📱 Responsive Mobile Viewport Fix */
+@media screen and (max-width: 768px) {
+  .tour-table, .tour-row, .tour-cell {
+    display: block;
+    width: 100%;
+  }
+  
+  .tour-row {
+    padding: 20px 0;
+    position: relative;
+  }
+  
+  .tour-cell {
+    padding: 6px 0;
+    text-align: left;
+    width: 100%;
+  }
+  
+  .date-cell {
+    font-size: 1.2rem;
+    margin-bottom: 4px;
+  }
+  
+  .venue-name {
+    font-size: 1.1rem;
+  }
+  
+  .action-cell {
+    text-align: left;
+    margin-top: 14px;
+  }
+  
+  .ticket-btn {
+    width: 100%;
+    text-align: center;
+    box-sizing: border-box;
+  }
+}
+</style>
+
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Jessica Sinclair - Official Tour Dates & Smooth Jazz Groove</title>
@@ -1007,123 +1148,127 @@
 </div>
 
         <h2 class="section-title">Live Concerts China Tour 2027</h2>
+        <p class="tour-schedule-note">
+        ⏱️ All performances are scheduled from 7:00 PM to 11:00 PM local time. Doors open at 6:00 PM.
+        </p>
+
         <table class="tour-table">
             <tr class="tour-row">
-                <td class="tour-cell date-cell">MAR 05, 2027 (Fri)<span class="time-label">7:00 PM - 11:00 PM</span></td>
+                <td class="tour-cell date-cell">MAR 05, 2027 (Fri)</td>
                 <td class="tour-cell venue-cell"><div class="venue-name">Cadillac Arena</div><div class="location-name">Beijing</div></td>
                 <!-- <td class="tour-cell action-cell"><a href="#" class="ticket-btn">Tickets</a></td> -->
 
             </tr>
             <tr class="tour-row">
-                <td class="tour-cell date-cell">MAR 06, 2027 (Sat)<span class="time-label">7:00 PM - 11:00 PM</span></td>
+                <td class="tour-cell date-cell">MAR 06, 2027 (Sat)</td>
                 <td class="tour-cell venue-cell"><div class="venue-name">Mercedes-Benz Arena</div><div class="location-name">Shanghai</div></td>
                 <!-- <td class="tour-cell action-cell"><a href="#" class="ticket-btn">Tickets</a></td> -->
 
             </tr>
             <tr class="tour-row">
-                <td class="tour-cell date-cell">MAR 12, 2027 (Fri)<span class="time-label">7:00 PM - 11:00 PM</span></td>
+                <td class="tour-cell date-cell">MAR 12, 2027 (Fri)</td>
                 <td class="tour-cell venue-cell"><div class="venue-name">Canton Symphony Hall</div><div class="location-name">Guangzhou</div></td>
                 <!-- <td class="tour-cell action-cell"><a href="#" class="ticket-btn">Tickets</a></td> -->
 
             </tr>
             <tr class="tour-row">
-                <td class="tour-cell date-cell">MAR 13, 2027 (Sat)<span class="time-label">7:00 PM - 11:00 PM</span></td>
+                <td class="tour-cell date-cell">MAR 13, 2027 (Sat)</td>
                 <td class="tour-cell venue-cell"><div class="venue-name">Shenzhen Bay Sports Center</div><div class="location-name">Shenzhen</div></td>
                 <!-- <td class="tour-cell action-cell"><a href="#" class="ticket-btn">Tickets</a></td> -->
 
             </tr>
             <tr class="tour-row">
-                <td class="tour-cell date-cell">MAR 19, 2027 (Fri)<span class="time-label">7:00 PM - 11:00 PM</span></td>
+                <td class="tour-cell date-cell">MAR 19, 2027 (Fri)</td>
                 <td class="tour-cell venue-cell"><div class="venue-name">Sichuan Gymnasium</div><div class="location-name">Chengdu</div></td>
                 <!-- <td class="tour-cell action-cell"><a href="#" class="ticket-btn">Tickets</a></td> -->
 
             </tr>
             <tr class="tour-row">
-                <td class="tour-cell date-cell">MAR 20, 2027 (Sat)<span class="time-label">7:00 PM - 11:00 PM</span></td>
+                <td class="tour-cell date-cell">MAR 20, 2027 (Sat)</td>
                 <td class="tour-cell venue-cell"><div class="venue-name">Chongqing Grand Theatre</div><div class="location-name">Chongqing</div></td>
                 <!-- <td class="tour-cell action-cell"><a href="#" class="ticket-btn">Tickets</a></td> -->
 
             </tr>
             <tr class="tour-row">
-                <td class="tour-cell date-cell">MAR 26, 2027 (Fri)<span class="time-label">7:00 PM - 11:00 PM</span></td>
+                <td class="tour-cell date-cell">MAR 26, 2027 (Fri)</td>
                 <td class="tour-cell venue-cell"><div class="venue-name">Shaanxi Grand Theatre</div><div class="location-name">Xi'an</div></td>
                 <!-- <td class="tour-cell action-cell"><a href="#" class="ticket-btn">Tickets</a></td> -->
 
             </tr>
             <tr class="tour-row">
-                <td class="tour-cell date-cell">MAR 27, 2027 (Sat)<span class="time-label">7:00 PM - 11:00 PM</span></td>
+                <td class="tour-cell date-cell">MAR 27, 2027 (Sat)</td>
                 <td class="tour-cell venue-cell"><div class="venue-name">Hangzhou Grand Theatre</div><div class="location-name">Hangzhou</div></td>
                 <!-- <td class="tour-cell action-cell"><a href="#" class="ticket-btn">Tickets</a></td> -->
 
             </tr>
             <tr class="tour-row">
-                <td class="tour-cell date-cell">APR 02, 2027 (Fri)<span class="time-label">7:00 PM - 11:00 PM</span></td>
+                <td class="tour-cell date-cell">APR 02, 2027 (Fri)</td>
                 <td class="tour-cell venue-cell"><div class="venue-name">Jiangsu Grand Theatre</div><div class="location-name">Nanjing</div></td>
                 <!-- <td class="tour-cell action-cell"><a href="#" class="ticket-btn">Tickets</a></td> -->
 
             </tr>
             <tr class="tour-row">
-                <td class="tour-cell date-cell">APR 03, 2027 (Sat)<span class="time-label">7:00 PM - 11:00 PM</span></td>
+                <td class="tour-cell date-cell">APR 03, 2027 (Sat)</td>
                 <td class="tour-cell venue-cell"><div class="venue-name">Wuhan Qintai Concert Hall</div><div class="location-name">Wuhan</div></td>
                 <!-- <td class="tour-cell action-cell"><a href="#" class="ticket-btn">Tickets</a></td> -->
 
             </tr>
             <tr class="tour-row">
-                <td class="tour-cell date-cell">APR 09, 2027 (Fri)<span class="time-label">7:00 PM - 11:00 PM</span></td>
+                <td class="tour-cell date-cell">APR 09, 2027 (Fri)</td>
                 <td class="tour-cell venue-cell"><div class="venue-name">Changsha Concert Hall</div><div class="location-name">Changsha</div></td>
                 <!-- <td class="tour-cell action-cell"><a href="#" class="ticket-btn">Tickets</a></td> -->
 
             </tr>
             <tr class="tour-row">
-                <td class="tour-cell date-cell">APR 10, 2027 (Sat)<span class="time-label">7:00 PM - 11:00 PM</span></td>
+                <td class="tour-cell date-cell">APR 10, 2027 (Sat)</td>
                 <td class="tour-cell venue-cell"><div class="venue-name">Xiamen Grand Theatre</div><div class="location-name">Xiamen</div></td>
                 <!-- <td class="tour-cell action-cell"><a href="#" class="ticket-btn">Tickets</a></td> -->
 
             </tr>
             <tr class="tour-row">
-                <td class="tour-cell date-cell">APR 16, 2027 (Fri)<span class="time-label">7:00 PM - 11:00 PM</span></td>
+                <td class="tour-cell date-cell">APR 16, 2027 (Fri)</td>
                 <td class="tour-cell venue-cell"><div class="venue-name">Yunnan Grand Theatre</div><div class="location-name">Kunming</div></td>
                 <!-- <td class="tour-cell action-cell"><a href="#" class="ticket-btn">Tickets</a></td> -->
 
             </tr>
             <tr class="tour-row">
-                <td class="tour-cell date-cell">APR 17, 2027 (Sat)<span class="time-label">7:00 PM - 11:00 PM</span></td>
+                <td class="tour-cell date-cell">APR 17, 2027 (Sat)</td>
                 <td class="tour-cell venue-cell"><div class="venue-name">Guilin Grand Theatre</div><div class="location-name">Guilin</div></td>
                 <!-- <td class="tour-cell action-cell"><a href="#" class="ticket-btn">Tickets</a></td> -->
 
             </tr>
             <tr class="tour-row">
-                <td class="tour-cell date-cell">APR 23, 2027 (Fri)<span class="time-label">7:00 PM - 11:00 PM</span></td>
+                <td class="tour-cell date-cell">APR 23, 2027 (Fri)</td>
                 <td class="tour-cell venue-cell"><div class="venue-name">Qingdao Grand Theatre</div><div class="location-name">Qingdao</div></td>
                 <!-- <td class="tour-cell action-cell"><a href="#" class="ticket-btn">Tickets</a></td> -->
 
             </tr>
             <tr class="tour-row">
-                <td class="tour-cell date-cell">APR 24, 2027 (Sat)<span class="time-label">7:00 PM - 11:00 PM</span></td>
+                <td class="tour-cell date-cell">APR 24, 2027 (Sat)</td>
                 <td class="tour-cell venue-cell"><div class="venue-name">Dalian Grand Theatre</div><div class="location-name">Dalian</div></td>
                 <!-- <td class="tour-cell action-cell"><a href="#" class="ticket-btn">Tickets</a></td> -->
 
             </tr>
             <tr class="tour-row">
-                <td class="tour-cell date-cell">MAY 01, 2027 (Sat)<span class="time-label">7:00 PM - 11:00 PM</span></td>
+                <td class="tour-cell date-cell">MAY 01, 2027 (Sat)</td>
                 <td class="tour-cell venue-cell"><div class="venue-name">Harbin Concert Hall</div><div class="location-name">Harbin</div></td>
                 <!-- <td class="tour-cell action-cell"><a href="#" class="ticket-btn">Tickets</a></td> -->
 
             </tr>
             <tr class="tour-row">
-                <td class="tour-cell date-cell">MAY 07, 2027 (Fri)<span class="time-label">7:00 PM - 11:00 PM</span></td>
+                <td class="tour-cell date-cell">MAY 07, 2027 (Fri)</td>
                 <td class="tour-cell venue-cell"><div class="venue-name">Liaoning Grand Theatre</div><div class="location-name">Shenyang</div></td>
                 <!-- <td class="tour-cell action-cell"><a href="#" class="ticket-btn">Tickets</a></td> -->
 
             </tr>
             <tr class="tour-row">
-                <td class="tour-cell date-cell">MAY 08, 2027 (Sat)<span class="time-label">7:00 PM - 11:00 PM</span></td>
+                <td class="tour-cell date-cell">MAY 08, 2027 (Sat)</td>
                 <td class="tour-cell venue-cell"><div class="venue-name">Tianjin Grand Theatre</div><div class="location-name">Tianjin</div></td>
                 <!-- <td class="tour-cell action-cell"><a href="#" class="ticket-btn">Tickets</a></td> -->
 
             </tr>
             <tr class="tour-row">
-                <td class="tour-cell date-cell">MAY 14, 2027 (Fri)<span class="time-label">7:00 PM - 11:00 PM</span></td>
+                <td class="tour-cell date-cell">MAY 14, 2027 (Fri)</td>
                 <td class="tour-cell venue-cell"><div class="venue-name">Venetian Theatre (Tour Finale)</div><div class="location-name">Macao</div></td>
                 <!-- <td class="tour-cell action-cell"><a href="#" class="ticket-btn">Tickets</a></td> -->
 
